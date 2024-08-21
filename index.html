@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(126, 151, 172);
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            
+        }
+        .login-form{
+            width: 340px;
+            height: 300px;
+            border: 2px solid rgb(67, 66, 66);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            margin: 200px auto;
+        }
+        .login-form legend{
+            font-size: 1.5em;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .form-input{
+            margin-bottom: 20px;
+        }
+        .form-input label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-input input{
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+        }
+        .btn{
+            border-radius: 5px;
+            background-color: whitesmoke;
+            padding: 10px 15px;
+            font-weight: 200;
+            border: none;
+        }
+        .reg-link{
+            color: black;
+            margin-left: 85px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <fieldset class="login-form">
+        <legend><i class="fa-solid fa-unlock fa-fw"></i>Login Form</legend>
+        <div class="form-input">
+        <label><i class="fa-solid fa-user fa-fw"></i>Username</label>
+        <input type="name">
+        </div>
+        <div class="form-input">
+        <label><i class="fa-solid fa-key fa-fw"></i>Password</label>
+        <input type="password">
+        </div>
+        <button class="btn"><i class="fa-solid fa-lock-open fa-fw"></i>Log in</button>
+    </form>
+        <a href="#" class="reg-link">Register Account</a>
+    </fieldset>
+    </form>
+</body>
+<script src="https://kit.fontawesome.com/40ccd30742.js" crossorigin="anonymous"></script>
+</html>
